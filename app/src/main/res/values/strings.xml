@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Article Assignment</string>
+    <string name="No_internet_connection">Internet connection is not available. Please check...</string>
+    <string name="str_OK">OK</string>
+</resources>
