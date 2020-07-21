@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -10,7 +11,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -20,6 +21,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -32,5 +38,24 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //For API integration
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_latest_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_latest_version"
+    implementation "com.squareup.okhttp3:okhttp:4.7.2"
+//Room Local DB
+    implementation "androidx.room:room-runtime:$room_DB_latest_version"
+    annotationProcessor "androidx.room:room-compiler:$room_DB_latest_version" // For Kotlin use kapt instead of annotationProcessor
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_DB_latest_version"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_DB_latest_version"
+
+    annotationProcessor "android.arch.persistence.room:compiler:$room_DB_latest_version"
+    kapt "androidx.room:room-compiler:$room_DB_latest_version"
+
+    //Image loader
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
 
 }
