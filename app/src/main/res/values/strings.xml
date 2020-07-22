@@ -2,4 +2,13 @@
     <string name="app_name">Article Assignment</string>
     <string name="No_internet_connection">Internet connection is not available. Please check...</string>
     <string name="str_OK">OK</string>
+    <string name="hint_user_designation">User Designation</string>
+    <string name="str_hint_time">time</string>
+    <string name="str_loren_epson_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="hint_article_title">Article title goes here can be multiline.</string>
+    <string name="hint_article_link">Article url goes here.</string>
+    <string name="hint_likes_count">0K Likes</string>
+    <string name="hint_comments_count">0K Comments</string>
+    <string name="str_hint_user_city">User city</string>
+    <string name="hint_username">Username</string>
 </resources>
