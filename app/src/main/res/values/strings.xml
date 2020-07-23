@@ -11,4 +11,6 @@
     <string name="hint_comments_count">0K Comments</string>
     <string name="str_hint_user_city">User city</string>
     <string name="hint_username">Username</string>
+    <string name="tab_article">Articles</string>
+    <string name="tab_users">Users</string>
 </resources>
