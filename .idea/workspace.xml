@@ -2,23 +2,30 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="pixel" />
+        <device id="Nexus 7 2013" />
+      </config>
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41cdec57-25c1-4d7f-a724-ae4f018211c2" name="Default Changelist" comment="Basic project structure created">
+    <list default="true" id="41cdec57-25c1-4d7f-a724-ae4f018211c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/activity/UserDetailsActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_details.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -30,6 +37,15 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -47,10 +63,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-21T16:59:02.254Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -58,10 +76,19 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.assignment.articleassignment.view.fragment" />
       <recent name="com.assignment.articleassignment.view.activity" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.assignment.articleassignment.view.customviews" />
       <recent name="com.assignment.articleassignment.utils" />
+    </key>
+    <key name="android.template.1611910212">
+      <recent name="com.assignment.articleassignment.view.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,30 +176,64 @@
       <option name="project" value="LOCAL" />
       <updated>1595321247118</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed : &#10;1. User list item designed&#10;2. Article list item designed">
+      <created>1595410020285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595410020285</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feature : User list Article and list added on tabs">
+      <created>1595531641844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595531641845</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project created." />
     <MESSAGE value="Basic project structure created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic project structure created" />
+    <MESSAGE value="Completed : &#10;1. User list item designed&#10;2. Article list item designed" />
+    <MESSAGE value="Feature : User list Article and list added on tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : User list Article and list added on tabs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="435" y="88" width="570" height="685" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1595318987872">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="435" y="88" width="579" height="687" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1595530658603">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="435" y="88" width="570" height="685" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1440.806@0.23.1440.806" timestamp="1595318987872" />
-    <state x="473" y="285" key="AndroidCreateXmlResourceDialog" timestamp="1595321118368">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="435" y="88" width="579" height="687" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1440.808@0.23.1440.808" timestamp="1595530658603" />
+    <state x="206" y="187" key="AndroidCreateResourceDirectoryDialog" timestamp="1595348772951">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
+    <state x="206" y="187" key="AndroidCreateResourceDirectoryDialog/0.23.1440.808@0.23.1440.808" timestamp="1595348772951" />
+    <state x="206" y="187" key="AndroidCreateResourceFileDialog" timestamp="1595331631588">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="206" y="187" key="AndroidCreateResourceFileDialog/0.23.1440.804@0.23.1440.804" timestamp="1595331631588" />
+    <state x="473" y="285" key="AndroidCreateXmlResourceDialog" timestamp="1595532553742">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="473" y="284" key="AndroidCreateXmlResourceDialog/0.23.1440.804@0.23.1440.804" timestamp="1595331644535" />
     <state x="473" y="285" key="AndroidCreateXmlResourceDialog/0.23.1440.806@0.23.1440.806" timestamp="1595321118368" />
-    <state x="0" y="33" key="CommitChangelistDialog2" timestamp="1595321389223">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="473" y="285" key="AndroidCreateXmlResourceDialog/0.23.1440.808@0.23.1440.808" timestamp="1595532553742" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595531641639">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="0" y="33" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1595321389223" />
-    <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595321251909">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.808@0.23.1440.808" timestamp="1595531641639" />
+    <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595531644937">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1595321251909" />
+    <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1595531644937" />
+    <state x="110" y="123" width="1016" height="607" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595350784462">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="110" y="123" width="1016" height="604" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1440.808@0.23.1440.808" timestamp="1595350291768" />
+    <state x="110" y="123" width="1016" height="607" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1440.811@0.23.1440.811" timestamp="1595350784462" />
   </component>
 </project>
