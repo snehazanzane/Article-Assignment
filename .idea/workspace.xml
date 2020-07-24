@@ -8,16 +8,30 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="41cdec57-25c1-4d7f-a724-ae4f018211c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/activity/UserDetailsActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/ArticleAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/models/ArticleModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/models/MediaModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/models/UserModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/network/APIinterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/network/ApiUrl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/Util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/NetworkUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/NetworkConnectivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_article_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_article_list.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +58,7 @@
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -63,12 +78,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_PROCESS" value="com.assignment.articleassignment" />
+    <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_29" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-21T16:59:02.254Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/network" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -80,13 +99,15 @@
       <recent name="com.assignment.articleassignment.view.activity" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.assignment.articleassignment.view.customviews" />
+      <recent name="com.assignment.articleassignment.data.adapter" />
       <recent name="com.assignment.articleassignment.utils" />
+      <recent name="com.assignment.articleassignment.view.customviews" />
     </key>
     <key name="android.template.1611910212">
       <recent name="com.assignment.articleassignment.view.activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/network" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/values" />
     </key>
@@ -214,17 +235,53 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="206" y="187" key="AndroidCreateResourceFileDialog/0.23.1440.804@0.23.1440.804" timestamp="1595331631588" />
-    <state x="473" y="285" key="AndroidCreateXmlResourceDialog" timestamp="1595532553742">
+    <state x="473" y="285" key="AndroidCreateXmlResourceDialog" timestamp="1595538141874">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="473" y="284" key="AndroidCreateXmlResourceDialog/0.23.1440.804@0.23.1440.804" timestamp="1595331644535" />
     <state x="473" y="285" key="AndroidCreateXmlResourceDialog/0.23.1440.806@0.23.1440.806" timestamp="1595321118368" />
-    <state x="473" y="285" key="AndroidCreateXmlResourceDialog/0.23.1440.808@0.23.1440.808" timestamp="1595532553742" />
+    <state x="473" y="285" key="AndroidCreateXmlResourceDialog/0.23.1440.808@0.23.1440.808" timestamp="1595538141874" />
+    <state x="476" y="197" key="AndroidProcessChooserDialog" timestamp="1595592046772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="476" y="197" key="AndroidProcessChooserDialog/0.23.1440.804@0.23.1440.804" timestamp="1595592046772" />
     <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595531641639">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="0" y="33" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1595321389223" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.808@0.23.1440.808" timestamp="1595531641639" />
+    <state width="1174" height="291" key="GridCell.Tab.0.bottom" timestamp="1595593516772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
+    <state width="1174" height="291" key="GridCell.Tab.0.center" timestamp="1595593516771">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
+    <state width="1174" height="291" key="GridCell.Tab.0.left" timestamp="1595593516771">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
+    <state width="1174" height="291" key="GridCell.Tab.0.right" timestamp="1595593516771">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
+    <state width="1174" height="291" key="GridCell.Tab.1.bottom" timestamp="1595593516772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.1.bottom/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
+    <state width="1174" height="291" key="GridCell.Tab.1.center" timestamp="1595593516772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.1.center/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
+    <state width="1174" height="291" key="GridCell.Tab.1.left" timestamp="1595593516772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.1.left/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
+    <state width="1174" height="291" key="GridCell.Tab.1.right" timestamp="1595593516772">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state width="1174" height="291" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
     <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595531644937">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
@@ -235,5 +292,41 @@
     </state>
     <state x="110" y="123" width="1016" height="604" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1440.808@0.23.1440.808" timestamp="1595350291768" />
     <state x="110" y="123" width="1016" height="607" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1440.811@0.23.1440.811" timestamp="1595350784462" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>151</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>152</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>161</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>97</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>98</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/ArticleListFragment.kt</url>
+          <line>102</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

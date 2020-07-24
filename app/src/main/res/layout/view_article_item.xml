@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="8dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.assignment.articleassignment.view.customviews.CircularImageView
-                android:id="@+id/imageUser_UserDetailsActivity"
+                android:id="@+id/imageUser_ArticleListItem"
                 android:layout_width="@dimen/size_image_size"
                 android:layout_height="@dimen/size_image_size"
                 android:layout_centerVertical="true"
@@ -39,12 +39,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/imageUser_UserDetailsActivity"
+                android:layout_toRightOf="@+id/imageUser_ArticleListItem"
                 android:orientation="vertical"
                 android:paddingLeft="8dp">
 
                 <TextView
-                    android:id="@+id/textUsername_UserListItem"
+                    android:id="@+id/textUsername_ArticleListItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hint_username"
@@ -53,7 +53,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textDesignation_UserListItem"
+                    android:id="@+id/textDesignation_ArticleListItem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hint_user_designation"
@@ -63,7 +63,7 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/textUserCity_UserListItem"
+            android:id="@+id/textTime_ArticleListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
