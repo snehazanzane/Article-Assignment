@@ -12,7 +12,7 @@ class NetworkConnectivity {
     companion object Factory {
         fun create(): NetworkConnectivity = NetworkConnectivity()
 
-        /** 
+        /**
          * Is connected boolean.
          *
          * @param context the context
@@ -50,5 +50,4 @@ class NetworkConnectivity {
             pbutton.setTextColor(ContextCompat.getColor(context, R.color.std_blue))
         }
     }
-
 }

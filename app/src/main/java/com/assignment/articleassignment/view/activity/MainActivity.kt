@@ -14,12 +14,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val adapter = MainViewPagerAdapter(supportFragmentManager)
         adapter.addFragment(ArticleListFragment(), getString(R.string.tab_article))
         adapter.addFragment(UserListFragment(), getString(R.string.tab_users))
         viewPager_MainActivity.adapter = adapter
         tabs_MainActivity.setupWithViewPager(viewPager_MainActivity)
-
     }
 }

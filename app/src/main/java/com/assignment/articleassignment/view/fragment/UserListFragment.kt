@@ -23,7 +23,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UserListFragment  : Fragment() {
+class UserListFragment : Fragment() {
     var arrayListUserData: ArrayList<UserModel?> = ArrayList<UserModel?>()
 
     var page_number: Int = 1
@@ -92,8 +92,6 @@ class UserListFragment  : Fragment() {
                             if (it?.size <= 0) {
                                 isMoreUserAvailable = false
                             }
-
-                            //total_records = it.total
                             arrayListUserData.addAll(it)
                             mUserAdapter.notifyDataSetChanged()
                         }
@@ -140,12 +138,9 @@ class UserListFragment  : Fragment() {
         itemsswipetorefresh_UserListFragment.setOnRefreshListener {
             if (isMoreUserAvailable) {
                 page_number = +page_number + 1
-
                 getItemsData()
-
                 recyclerview_UserListFragment.adapter = mUserAdapter
                 itemsswipetorefresh_UserListFragment.isRefreshing = false
-
                 recyclerview_UserListFragment.smoothScrollToPosition(1)
             } else {
                 Toast.makeText(
@@ -162,7 +157,5 @@ class UserListFragment  : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView();
         this.clearFindViewByIdCache();
-
     }
-
 }
