@@ -23,13 +23,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textusername_UserDetailsActivity"
+        android:id="@+id/textUsername_UserDetailsActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/hint_username"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageUser_UserDetailsActivity" />
@@ -46,7 +47,7 @@
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textusername_UserDetailsActivity" />
+        app:layout_constraintTop_toBottomOf="@+id/textUsername_UserDetailsActivity" />
 
     <TextView
         android:id="@+id/textCity_UserDetailsActivity"
@@ -63,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textDesignation_UserDetailsActivity" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textContent_UserDetailsActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
