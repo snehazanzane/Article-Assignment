@@ -19,9 +19,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/ArticleAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/ArticleAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/Util.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595608240871</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Feature : &#10;1. article list created time calculated compaire with current time and display article how old">
+      <created>1595700225417</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595700225417</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,7 +229,8 @@
     <MESSAGE value="Feature : User list Article and list added on tabs" />
     <MESSAGE value="Feature : &#10;1. Article list API integration done&#10;2. pull to refresh functionality implemented for article list" />
     <MESSAGE value="Feature : &#10;1. User list API integration done&#10;2. pull to refresh functionality implemented for user list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : &#10;1. User list API integration done&#10;2. pull to refresh functionality implemented for user list" />
+    <MESSAGE value="Feature : &#10;1. article list created time calculated compaire with current time and display article how old" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : &#10;1. article list created time calculated compaire with current time and display article how old" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="88" width="579" height="687" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1595530658603">
@@ -250,11 +256,12 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="476" y="197" key="AndroidProcessChooserDialog/0.23.1440.804@0.23.1440.804" timestamp="1595592046772" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595700053899">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595700225205">
+      <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1595700053899" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.808@0.23.1440.808" timestamp="1595531641639" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1595700225205" />
     <state width="1174" height="120" key="GridCell.Tab.0.bottom" timestamp="1595699337665">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -291,11 +298,12 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
-    <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595608245680">
-      <screen x="0" y="23" width="1440" height="806" />
+    <state x="318" y="171" key="Vcs.Push.Dialog.v2" timestamp="1595700227789">
+      <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1595608245680" />
     <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1595531644937" />
+    <state x="318" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1595700227789" />
     <state x="110" y="123" width="1016" height="607" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595350784462">
       <screen x="0" y="23" width="1440" height="811" />
     </state>

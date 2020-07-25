@@ -1,6 +1,7 @@
 package com.assignment.articleassignment.data.adapter
 
 import android.os.Build
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,6 +61,9 @@ class ArticleAdapter(
             Picasso.get().load(arrayListArticleData.get(position)?.media?.get(0)?.image)
                 .placeholder(R.drawable.ic_article_default)
                 .into(itemViewHolder.itemView.imageArticle_ArticleListItem)
+
+            itemViewHolder.itemView.textArticleLink_ArticleListItem.setMovementMethod(LinkMovementMethod.getInstance());
+
         } else {
             itemViewHolder.itemView.textArticleTitle_ArticleListItem.visibility = View.GONE
             itemViewHolder.itemView.textArticleLink_ArticleListItem.visibility = View.GONE
@@ -81,6 +85,7 @@ class ArticleAdapter(
                 it
             )
         })
+
 
         //arrayListArticleData.get(position)?.createdAt?.let { Util.getTimePeriodBetweenDate(it) };
 
