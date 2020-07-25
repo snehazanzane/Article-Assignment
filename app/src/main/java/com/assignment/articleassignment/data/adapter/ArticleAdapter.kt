@@ -1,8 +1,10 @@
 package com.assignment.articleassignment.data.adapter
 
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.assignment.articleassignment.R
 import com.assignment.articleassignment.data.models.ArticleModel
@@ -33,6 +35,7 @@ class ArticleAdapter(
         arrayListArticleData = arrArticle
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val itemViewHolder = holder as ItemViewHolder
         itemViewHolder.itemView.textUsername_ArticleListItem.text =
@@ -73,6 +76,13 @@ class ArticleAdapter(
                 R.string.str_comments
             )
 
+        itemViewHolder.itemView.textTime_ArticleListItem.setText(arrayListArticleData.get(position)?.createdAt?.let {
+            Util.getTimePeriodBetweenDate(
+                it
+            )
+        })
+
+        //arrayListArticleData.get(position)?.createdAt?.let { Util.getTimePeriodBetweenDate(it) };
 
     }
 }

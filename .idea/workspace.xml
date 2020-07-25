@@ -9,6 +9,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Date : " />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -17,9 +18,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/UserListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/view/fragment/UserListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/ArticleAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/data/adapter/ArticleAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/assignment/articleassignment/utils/Util.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_article_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_user_list_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595594466544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feature : &#10;1. User list API integration done&#10;2. pull to refresh functionality implemented for user list">
+      <created>1595608240871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595608240871</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -214,7 +223,8 @@
     <MESSAGE value="Completed : &#10;1. User list item designed&#10;2. Article list item designed" />
     <MESSAGE value="Feature : User list Article and list added on tabs" />
     <MESSAGE value="Feature : &#10;1. Article list API integration done&#10;2. pull to refresh functionality implemented for article list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : &#10;1. Article list API integration done&#10;2. pull to refresh functionality implemented for article list" />
+    <MESSAGE value="Feature : &#10;1. User list API integration done&#10;2. pull to refresh functionality implemented for user list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : &#10;1. User list API integration done&#10;2. pull to refresh functionality implemented for user list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="88" width="579" height="687" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1595530658603">
@@ -240,27 +250,31 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="476" y="197" key="AndroidProcessChooserDialog/0.23.1440.804@0.23.1440.804" timestamp="1595592046772" />
-    <state x="0" y="33" key="CommitChangelistDialog2" timestamp="1595594466142">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1595700053899">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="0" y="33" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1595594466142" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1595700053899" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.808@0.23.1440.808" timestamp="1595531641639" />
-    <state width="1174" height="291" key="GridCell.Tab.0.bottom" timestamp="1595593516772">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state width="1174" height="120" key="GridCell.Tab.0.bottom" timestamp="1595699337665">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
-    <state width="1174" height="291" key="GridCell.Tab.0.center" timestamp="1595593516771">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state width="1174" height="120" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1595699337665" />
+    <state width="1174" height="120" key="GridCell.Tab.0.center" timestamp="1595699337663">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
-    <state width="1174" height="291" key="GridCell.Tab.0.left" timestamp="1595593516771">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state width="1174" height="120" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1595699337663" />
+    <state width="1174" height="120" key="GridCell.Tab.0.left" timestamp="1595699337663">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
-    <state width="1174" height="291" key="GridCell.Tab.0.right" timestamp="1595593516771">
-      <screen x="0" y="23" width="1440" height="804" />
+    <state width="1174" height="120" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1595699337663" />
+    <state width="1174" height="120" key="GridCell.Tab.0.right" timestamp="1595699337665">
+      <screen x="0" y="23" width="1440" height="806" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1595593516771" />
+    <state width="1174" height="120" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1595699337665" />
     <state width="1174" height="291" key="GridCell.Tab.1.bottom" timestamp="1595593516772">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
@@ -277,10 +291,10 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state width="1174" height="291" key="GridCell.Tab.1.right/0.23.1440.804@0.23.1440.804" timestamp="1595593516772" />
-    <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595594494138">
+    <state x="318" y="170" key="Vcs.Push.Dialog.v2" timestamp="1595608245680">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1595594494138" />
+    <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.806@0.23.1440.806" timestamp="1595608245680" />
     <state x="318" y="170" key="Vcs.Push.Dialog.v2/0.23.1440.808@0.23.1440.808" timestamp="1595531644937" />
     <state x="110" y="123" width="1016" height="607" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595350784462">
       <screen x="0" y="23" width="1440" height="811" />

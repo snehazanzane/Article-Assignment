@@ -15,11 +15,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/textTime_ArticleListItem">
 
             <com.assignment.articleassignment.view.customviews.CircularImageView
                 android:id="@+id/imageUser_ArticleListItem"
@@ -64,7 +63,7 @@
             android:id="@+id/textTime_ArticleListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:text="@string/str_hint_time"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -92,7 +91,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/hint_details"
+            android:text="@string/str_loren_epson_text"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
