@@ -36,13 +36,11 @@ class ArticleListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
         val view = inflater?.inflate(
             R.layout.fragment_article_list,
             container, false
         )
-
         return view
     }
 
@@ -60,22 +58,17 @@ class ArticleListFragment : Fragment() {
 
         //** Set the colors of the Pull To Refresh View
         userSwipeToRefreshFunctionality()
-
     }
-
 
     /**
      * Get User List Data from Rest API(Network available) / Local DB(Network NOT available)
      */
     private fun getItemsData() {
-
         if (activity?.let { NetworkConnectivity.isConnected(it) }!!) {
-
             //Get data from Rest API Call -->>
             val progressDialog = ProgressDialog(activity)
             progressDialog.setTitle("Please wait...")
             progressDialog.show()
-
             APIinterface().getArticles(page_number, per_page)
                 .enqueue(object : Callback<ArrayList<ArticleModel>> {
                     override fun onFailure(call: Call<ArrayList<ArticleModel>>, t: Throwable) {
@@ -92,13 +85,10 @@ class ArticleListFragment : Fragment() {
                         response: Response<ArrayList<ArticleModel>>
                     ) {
                         response.body()?.let {
-
                             progressDialog.dismiss()
-
                             if (it?.size <= 0) {
                                 isMoreArticleAvailabel = false
                             }
-
                             //total_records = it.total
                             arrayListArticleData.addAll(it)
                             mArticleAdapter.notifyDataSetChanged()
@@ -108,7 +98,6 @@ class ArticleListFragment : Fragment() {
         } else {
             NetworkConnectivity.showNetworkAlert(activity!!)
         }
-
     }
 
     /**
@@ -116,9 +105,7 @@ class ArticleListFragment : Fragment() {
      */
     fun setAdapter() {
         mArticleAdapter = activity?.let { ArticleAdapter(it, arrayListArticleData) }!!
-        // mArticleAdapter.notifyDataSetChanged()
         recyclerview_ArticleFragment.layoutManager = LinearLayoutManager(this.context)
-
         recyclerview_ArticleFragment.adapter = mArticleAdapter
     }
 
@@ -151,12 +138,9 @@ class ArticleListFragment : Fragment() {
 
             if (isMoreArticleAvailabel) {
                 page_number = +page_number + 1
-
                 getItemsData()
-
                 recyclerview_ArticleFragment.adapter = mArticleAdapter
                 itemsswipetorefresh_ArticleFragment.isRefreshing = false
-
                 recyclerview_ArticleFragment.smoothScrollToPosition(1)
             } else {
                 Toast.makeText(
@@ -173,7 +157,5 @@ class ArticleListFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView();
         this.clearFindViewByIdCache();
-
     }
-
 }

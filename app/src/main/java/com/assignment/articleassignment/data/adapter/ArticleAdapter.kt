@@ -91,7 +91,6 @@ class ArticleAdapter(
         })
 
         itemViewHolder.itemView.layUserProfile_ArticleListItem.setOnClickListener(View.OnClickListener {
-
             var intent: Intent = Intent(context, UserDetailsActivity::class.java)
             intent.putExtra(
                 "" + context.getString(R.string.str_obj),

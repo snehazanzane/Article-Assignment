@@ -17,7 +17,6 @@ class UserDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_user_details)
 
         init()
-
         setData()
     }
 
@@ -27,10 +26,9 @@ class UserDetailsActivity : AppCompatActivity() {
         //set back button
         actionbar?.setDisplayHomeAsUpEnabled(true)
         actionbar?.setDisplayHomeAsUpEnabled(true)
-        actionbar?.title= getString(R.string.title_user_details)
+        actionbar?.title = getString(R.string.title_user_details)
 
-        objUser = intent.getParcelableExtra(""+getString(R.string.str_obj))
-
+        objUser = intent.getParcelableExtra("" + getString(R.string.str_obj))
     }
 
     private fun setData() {
