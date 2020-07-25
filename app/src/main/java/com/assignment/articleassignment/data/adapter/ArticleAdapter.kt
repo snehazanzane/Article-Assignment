@@ -1,5 +1,7 @@
 package com.assignment.articleassignment.data.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
@@ -10,12 +12,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.assignment.articleassignment.R
 import com.assignment.articleassignment.data.models.ArticleModel
 import com.assignment.articleassignment.utils.Util
-import com.assignment.articleassignment.view.fragment.ArticleListFragment
+import com.assignment.articleassignment.view.activity.UserDetailsActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.view_article_item.view.*
 
 class ArticleAdapter(
-    var context: ArticleListFragment,
+    public var context: Context,
     private var arrayListArticleData: ArrayList<ArticleModel?>
 ) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -62,7 +64,9 @@ class ArticleAdapter(
                 .placeholder(R.drawable.ic_article_default)
                 .into(itemViewHolder.itemView.imageArticle_ArticleListItem)
 
-            itemViewHolder.itemView.textArticleLink_ArticleListItem.setMovementMethod(LinkMovementMethod.getInstance());
+            itemViewHolder.itemView.textArticleLink_ArticleListItem.setMovementMethod(
+                LinkMovementMethod.getInstance()
+            );
 
         } else {
             itemViewHolder.itemView.textArticleTitle_ArticleListItem.visibility = View.GONE
@@ -86,8 +90,16 @@ class ArticleAdapter(
             )
         })
 
+        itemViewHolder.itemView.layUserProfile_ArticleListItem.setOnClickListener(View.OnClickListener {
 
-        //arrayListArticleData.get(position)?.createdAt?.let { Util.getTimePeriodBetweenDate(it) };
+            var intent: Intent = Intent(context, UserDetailsActivity::class.java)
+            intent.putExtra(
+                "" + context.getString(R.string.str_obj),
+                arrayListArticleData.get(position)?.user?.get(0)
+            )
+            context.startActivity(intent)
+        })
 
     }
+
 }

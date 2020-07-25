@@ -115,7 +115,7 @@ class ArticleListFragment : Fragment() {
      * Binding user data to Adapter
      */
     fun setAdapter() {
-        mArticleAdapter = ArticleAdapter(this, arrayListArticleData)
+        mArticleAdapter = activity?.let { ArticleAdapter(it, arrayListArticleData) }!!
         // mArticleAdapter.notifyDataSetChanged()
         recyclerview_ArticleFragment.layoutManager = LinearLayoutManager(this.context)
 

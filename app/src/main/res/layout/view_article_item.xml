@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:id="@+id/relativeLayout"
+            android:id="@+id/layUserProfile_ArticleListItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -81,7 +81,7 @@
             android:background="@color/gray_light_bk"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintTop_toBottomOf="@+id/layUserProfile_ArticleListItem"
             app:srcCompat="@drawable/ic_article_default" />
 
         <TextView

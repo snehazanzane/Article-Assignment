@@ -12,7 +12,10 @@ import com.assignment.articleassignment.view.activity.UserDetailsActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.view_user_list_item.view.*
 
-class UserAdapter(public var context: Context,private var arrayListUserData: ArrayList<UserModel?>) :
+class UserAdapter(
+    public var context: Context,
+    private var arrayListUserData: ArrayList<UserModel?>
+) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -45,8 +48,11 @@ class UserAdapter(public var context: Context,private var arrayListUserData: Arr
             .into(itemViewHolder.itemView.imageUser_UserListItem)
 
         itemViewHolder.itemView.setOnClickListener(View.OnClickListener {
-            var intent:Intent = Intent(context,UserDetailsActivity::class.java)
-            intent.putExtra("obj",arrayListUserData.get(position))
+            var intent: Intent = Intent(context, UserDetailsActivity::class.java)
+            intent.putExtra(
+                "" + context.getString(R.string.str_obj),
+                arrayListUserData.get(position)
+            )
             context.startActivity(intent)
         })
     }

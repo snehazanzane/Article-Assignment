@@ -29,7 +29,8 @@ class UserDetailsActivity : AppCompatActivity() {
         actionbar?.setDisplayHomeAsUpEnabled(true)
         actionbar?.title= getString(R.string.title_user_details)
 
-        objUser = intent.getParcelableExtra("obj")
+        objUser = intent.getParcelableExtra(""+getString(R.string.str_obj))
+
     }
 
     private fun setData() {
