@@ -6,15 +6,13 @@ import android.content.DialogInterface
 import android.net.ConnectivityManager
 import androidx.core.content.ContextCompat
 import com.assignment.articleassignment.R
-import java.text.SimpleDateFormat
-import java.util.*
 
-class NetworkUtil {
+class NetworkConnectivity {
 
     companion object Factory {
-        fun create(): NetworkUtil = NetworkUtil()
+        fun create(): NetworkConnectivity = NetworkConnectivity()
 
-        /**
+        /** 
          * Is connected boolean.
          *
          * @param context the context
@@ -51,6 +49,6 @@ class NetworkUtil {
             val pbutton = alert.getButton(DialogInterface.BUTTON_POSITIVE)
             pbutton.setTextColor(ContextCompat.getColor(context, R.color.std_blue))
         }
-
     }
+
 }
