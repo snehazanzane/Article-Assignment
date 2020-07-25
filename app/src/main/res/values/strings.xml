@@ -18,4 +18,5 @@
     <string name="str_comments">Comments</string>
     <string name="msg_unable_to_fatch_data">Sorry unable to fatch data.</string>
     <string name="msg_no_more_data_available">No more Data available.</string>
+    <string name="title_user_details">User Profile</string>
 </resources>

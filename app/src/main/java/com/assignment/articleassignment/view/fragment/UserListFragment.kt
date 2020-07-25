@@ -38,13 +38,11 @@ class UserListFragment  : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
         val view = inflater?.inflate(
             R.layout.fragment_user_list,
             container, false
         )
-
         return view
     }
 
@@ -62,17 +60,13 @@ class UserListFragment  : Fragment() {
 
         //** Set the colors of the Pull To Refresh View
         userSwipeToRefreshFunctionality()
-
     }
-
 
     /**
      * Get User List Data from Rest API(Network available) / Local DB(Network NOT available)
      */
     private fun getItemsData() {
-
         if (activity?.let { NetworkConnectivity.isConnected(it) }!!) {
-
             //Get data from Rest API Call -->>
             val progressDialog = ProgressDialog(activity)
             progressDialog.setTitle("Please wait...")
@@ -94,9 +88,7 @@ class UserListFragment  : Fragment() {
                         response: Response<ArrayList<UserModel>>
                     ) {
                         response.body()?.let {
-
                             progressDialog.dismiss()
-
                             if (it?.size <= 0) {
                                 isMoreUserAvailable = false
                             }
@@ -110,17 +102,14 @@ class UserListFragment  : Fragment() {
         } else {
             NetworkConnectivity.showNetworkAlert(activity!!)
         }
-
     }
 
     /**
      * Binding user data to Adapter
      */
     fun setAdapter() {
-        mUserAdapter = UserAdapter( arrayListUserData)
-        // mUserAdapter.notifyDataSetChanged()
+        mUserAdapter = activity?.let { UserAdapter(it, arrayListUserData) }!!
         recyclerview_UserListFragment.layoutManager = LinearLayoutManager(this.context)
-
         recyclerview_UserListFragment.adapter = mUserAdapter
     }
 
@@ -149,8 +138,6 @@ class UserListFragment  : Fragment() {
          * Up Swipe to refresh functionality
          */
         itemsswipetorefresh_UserListFragment.setOnRefreshListener {
-
-
             if (isMoreUserAvailable) {
                 page_number = +page_number + 1
 
